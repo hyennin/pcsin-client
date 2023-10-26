@@ -1,27 +1,15 @@
-import { useState } from 'react';
-import './App.css';
-import Post from './components/Post';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Posting from './pages/Posting';
 
 function App() {
-  const [checked, setChecked] = useState(false)
-
   return (
-    <div className="App">
-      <div className="top_menu">
-        <label htmlFor={checked}>
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={({ target: { checked } }) => setChecked(checked)}
-          />
-          <p>내가 쓴 글 보기</p>
-        </label>
-        <div>
-
-        </div>
-      </div>
-      <Post title="제목입니다." content="내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다."/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path = "/" element={<Home/>}/>
+        <Route path = "/글작성" element={<Posting/>}/>
+      </Routes>
+    </Router>
   );
 }
 

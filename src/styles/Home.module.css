@@ -24,7 +24,7 @@ input {
 }
 
 input:checked {
-    background-image: url('./assets/checked.png');
+    background-image: url('../assets/checked.png');
     background-repeat: no-repeat;
 }
 
@@ -45,6 +45,6 @@ p {
     align-items: center;
     top: 748px;
     left: 300px;
-    background-color: #03D069;
+    background-color: var(--main);
     border-radius: 50px;
   }
