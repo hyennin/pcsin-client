@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Post from '../components/Post';
 import plus from '../assets/plus.png'
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Home = () => {
 
   return (
     <div className={styles.contianer}>
+      <Header isMain={true}/>
       <div className={styles.top_menu}>
         <label htmlFor={checked}>
           <input
