@@ -1,0 +1,39 @@
+.container {
+    height: 127px;
+    margin: 12px 16px;
+    padding: 16px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    background-color: var(--basic);
+}
+
+.title {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.content {
+    font-size: 15px;   
+    color: #BABABB;
+    font-weight: 400;
+}
+
+.sub_menu {
+    height: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    column-gap: 12px;
+}
+
+.sub_btn {
+    color: white;
+}
+
+.icon {
+    margin-right: 4px;
+}
