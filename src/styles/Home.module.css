@@ -5,17 +5,19 @@
 
 .top_menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 16px;
     padding: 0 16px;
 }
 
-label {
+.label {
     display: flex;
     align-items: center;
     user-select: none;
 }
 
-input {
+.input {
     appearance: none;
     width: 18px;
     height: 18px;
@@ -23,16 +25,69 @@ input {
     border-radius: 4px;
 }
 
-input:checked {
+.input:checked {
     background-image: url('../assets/checked.png');
     background-repeat: no-repeat;
 }
 
-p {
+.p {
     margin-left: 6px;
     font-size: 15px;   
     color: white;
     font-weight: 400;
+}
+
+.select {
+    position: relative;
+    width: 105px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--basic);
+    color: white;
+    cursor: pointer;
+}
+
+.selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.selected .btn {
+    margin-right: 15px;
+}
+
+.option_container {
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 126px;
+    padding: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px 20px;
+    width: 105px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--basic);
+    color: white;
+    margin-bottom: 2px;
 }
 
 .plus_btn {
