@@ -33,7 +33,6 @@ const Home = () => {
         </label>
         <div>
           <div className={styles.select} onClick={() => {
-              console.log(showOptions)
               setShowOptions(!showOptions)
           }}>
             <div className={styles.selected}>
@@ -52,7 +51,7 @@ const Home = () => {
       </div>
       <Post title="제목입니다." content="내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다."/>
       <div className={styles.plus_btn}>
-        <img onClick={() => navigate('/글작성')} src={plus}/>
+        <img onClick={() => navigate('/posting')} src={plus}/>
       </div>
     </div>
   );

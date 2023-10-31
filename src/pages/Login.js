@@ -14,7 +14,7 @@ const Login = () => {
                 <input type='password' className={styles.input} placeholder='비밀번호를 입력해주세요.'/>
                 <button type='submit' className={styles.login_btn}>로그인</button>
             </form>
-                <button className={styles.signup_btn} onClick={() => navigate('/회원가입')}>회원가입</button>
+                <button className={styles.signup_btn} onClick={() => navigate('/signup')}>회원가입</button>
         </div>
     );
 }

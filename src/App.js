@@ -9,9 +9,9 @@ function App() {
     <Router>
       <Routes>
         <Route path = "/" element={<Home/>}/>
-        <Route path = "/글작성" element={<Posting/>}/>
-        <Route path = "/로그인" element={<Login/>}/>
-        <Route path = "/회원가입" element={<SignUp/>}/>
+        <Route path = "/posting" element={<Posting/>}/>
+        <Route path = "/login" element={<Login/>}/>
+        <Route path = "/signup" element={<SignUp/>}/>
       </Routes>
     </Router>
   );
