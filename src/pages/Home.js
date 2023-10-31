@@ -22,9 +22,9 @@ const Home = () => {
     <div className={styles.contianer}>
       <Header isMain={true}/>
       <div className={styles.top_menu}>
-        <label htmlFor={checked}>
+        <label htmlFor={checked} className={styles.checkbox}>
           <input
-            className={styles.label}
+            className={styles.check}
             type="checkbox"
             checked={checked}
             onChange={({ target: { checked } }) => setChecked(checked)}
@@ -39,8 +39,8 @@ const Home = () => {
             <div className={styles.selected}>
               <div className={styles.label}>{currentValue}</div>
               {
-                <img src={showOptions ? closeArrow : openArrow}/>
-              }
+                <img className={styles.icon} src={showOptions ? closeArrow : openArrow}/>
+              } 
             </div>
             <div className={styles.option_container} style={{ display: showOptions ? 'block' : 'none'}}>
               <div className={styles.option} onClick={handleOnChangeSelectValue} value='최신순'>최신순</div>

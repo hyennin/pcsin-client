@@ -6,7 +6,7 @@ const Login = () => {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>로그인</h1>
+            <h2 className={styles.title}>로그인</h2>
             <form className={styles.form}>
                 <label className={styles.label}>이메일</label>
                 <input type='text' className={styles.input} placeholder='이메일을 입력해주세요.'/>

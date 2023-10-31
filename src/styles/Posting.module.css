@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 0 16px;
 }
   
 .label {
@@ -20,10 +20,11 @@
   
 .title {
     width: 100%;
-    height: 30px;
+    height: 41px;
     padding-left: 10px;
     border: 0;
     outline: none;
+    font-size: 14px;
     border-radius: 6px;
     color: white;
     background-color: var(--basic);
@@ -35,6 +36,7 @@
     padding: 5px 10px;
     border: 0;
     outline: none;
+    font-size: 15px;
     border-radius: 6px;
     color: white;
     background-color: var(--basic);
@@ -46,7 +48,7 @@
     position: absolute;
     bottom: 20px;
     width: 92%;
-    height: 36px;
+    height: 41px;
     color: white;
     background-color: var(--main);
     border: 0;
